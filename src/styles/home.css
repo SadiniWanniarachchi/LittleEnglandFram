@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Digdope&display=swap');
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Start a little below */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
+}
+
+.slide {
+  
+  position: relative;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -5px;
+  object-fit: cover;
+
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  padding-left: 20px;
+  border-radius: 8px;
+  text-align: left;
+
+}
+
+.slide-text.painted-paradise p.paradise-p {
+  font-family: 'Digdope-Regular';
+  font-size: 50px;
+  margin: 0; 
+  padding-bottom: 5px;
+  color: #ffffff;
+}
+
+.slide-text.painted-paradise h1.paradise-h1,
+.slide-text.painted-paradise h6.paradise-h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slide-text.painted-paradise h1.paradise-h1 {
+  font-family: 'Digdope-Regular';
+  font-size: 100px;
+}
+
+.slide-text.painted-paradise h6.paradise-h6 {
+  font-family: 'Digdope-Regular';
+  font-size: 24px;
+}
+
+.slide-text.digdope-regular h5.digdope-h5 {
+  font-family: 'Digdope-Regular';
+  font-size: 34px;
+  text-align: center;
+}
+
+
+.diamond-icon {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 1px solid none;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  display: inline-block;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li.slick-active .diamond-icon {
+  background-color: #0a302d; 
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .bestsellers {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .slide-text {
+    padding-left: 10px;
+  }
+  
+  .slide-text.painted-paradise p.paradise-p {
+    font-size: 35px;
+  }
+  
+  .slide-text.painted-paradise h1.paradise-h1 {
+    font-size: 60px;
+  }
+  
+  .bestsellers h2.section-title {
+    font-size: 60px;
+  }
+  
+  .bestsellers .bestsellers-link {
+    font-size: 24px;
+  }
+  
+  .more-than-title {
+    font-size: 100px;
+    left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bestsellers {
+    padding: 10px;
+  }
+
+  .slide-text.painted-paradise p.paradise-p {
+    font-size: 25px;
+  }
+  
+  .slide-text.painted-paradise h1.paradise-h1 {
+    font-size: 40px;
+  }
+  
+  .bestsellers p.section-subtitle {
+    font-size: 16px;
+  }
+
+  .bestsellers h2.section-title {
+    font-size: 50px;
+  }
+
+  .bestsellers .bestsellers-link {
+    font-size: 20px;
+  }
+  
+  .more-than-title {
+    font-size: 70px;
+    left: 50px;
+  }
+
+  .range-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-and-owl {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-text.painted-paradise p.paradise-p {
+    font-size: 20px;
+  }
+  
+  .slide-text.painted-paradise h1.paradise-h1 {
+    font-size: 30px;
+  }
+  
+  .bestsellers h2.section-title {
+    font-size: 40px;
+  }
+  
+  .bestsellers p.section-subtitle {
+    font-size: 14px;
+  }
+  
+  .bestsellers .bestsellers-link {
+    font-size: 18px;
+  }
+  
+  .more-than-title {
+    font-size: 50px;
+    left: 20px;
+  }
+}

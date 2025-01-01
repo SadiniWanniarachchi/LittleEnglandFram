@@ -1,0 +1,52 @@
+/* Full screen background */
+.Preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #08645e; /* Green background */
+    flex-direction: column;
+}
+
+/* Logo */
+.Preloader-logo {
+    width: 650px;
+    height: 650px;
+    margin-bottom: 0; /* Reduce or remove the gap */
+}
+
+/* Bouncing dots */
+.dots {
+    display: flex;
+    gap: 10px; /* Space between dots */
+    margin-top: 0; /* Ensure there's no margin above the dots */
+}
+
+/* Individual dot */
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff; /* White color */
+    border-radius: 50%;
+    animation: bounce 1.5s infinite;
+}
+
+/* Keyframes for bouncing effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Keyframes for pulsing effect */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
